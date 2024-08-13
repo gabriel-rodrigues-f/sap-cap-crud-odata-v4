@@ -1,0 +1,39 @@
+@server=http://localhost:4004
+@service=/odata/v4/products
+
+### Products
+POST {{server}}{{service}}/Products
+Content-Type: application/json
+Accept: */*
+
+{
+  "Code": "100",
+  "Name": "Iphone XI",
+  "Description": "Celular Iphone com 128GB",
+  "Price": 1500.00,
+  "Supplier": "Apple INC."
+}
+
+### Products
+GET {{server}}{{service}}/Products
+Content-Type: application/json
+Accept: */*
+
+### Products
+PUT {{server}}{{service}}/Products/100
+Content-Type: application/json
+Accept: */*
+
+{
+  "Code": "100",
+  "Name": "Iphone XI",
+  "Description": "Celular Iphone com 128GB",
+  "Price": 1500.00,
+  "Supplier": "Apple INC."
+}
+
+### Products
+DELETE {{server}}{{service}}/Products/100
+Content-Type: application/json
+Accept: */*
+

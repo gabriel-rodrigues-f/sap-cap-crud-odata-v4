@@ -20,12 +20,12 @@ Content-Type: application/json
 Accept: */*
 
 ### Products
-PUT {{server}}{{service}}/Products/100
+PUT {{server}}{{service}}/Products/80f03198-b8e3-4f42-a73b-720f0bf32bc8
 Content-Type: application/json
 Accept: */*
 
 {
-  "Code": "100",
+  "Code": "101",
   "Name": "Iphone XI",
   "Description": "Celular Iphone com 128GB",
   "Price": 1500.00,
@@ -33,7 +33,7 @@ Accept: */*
 }
 
 ### Products
-DELETE {{server}}{{service}}/Products/100
+DELETE {{server}}{{service}}/Products/6609e92f-007e-489e-aacf-0363de7f89ef
 Content-Type: application/json
 Accept: */*
 

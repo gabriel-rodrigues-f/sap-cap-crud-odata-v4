@@ -19,8 +19,13 @@ GET {{server}}{{service}}/Products
 Content-Type: application/json
 Accept: */*
 
+### Products by ID
+GET {{server}}{{service}}/Products/234c06b3-ab44-45cb-a2b8-986f4f5e4b1b
+Content-Type: application/json
+Accept: */*
+
 ### Products
-PUT {{server}}{{service}}/Products/80f03198-b8e3-4f42-a73b-720f0bf32bc8
+PUT {{server}}{{service}}/Products/234c06b3-ab44-45cb-a2b8-986f4f5e4b1b
 Content-Type: application/json
 Accept: */*
 
@@ -33,7 +38,7 @@ Accept: */*
 }
 
 ### Products
-DELETE {{server}}{{service}}/Products/6609e92f-007e-489e-aacf-0363de7f89ef
+DELETE {{server}}{{service}}/Products/234c06b3-ab44-45cb-a2b8-986f4f5e4b1b
 Content-Type: application/json
 Accept: */*
 

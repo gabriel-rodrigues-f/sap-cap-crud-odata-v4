@@ -1,27 +1,19 @@
 const cds = require('@sap/cds')
 
 module.exports = service => {
-    service.on('CREATE', 'Products', async request => {
-        const { query } = request
-        console.log(query)
-        await cds.run(query)
+    service.on('CREATE', 'Products', async ({ query }) => {
+        console.log(JSON.stringify(query))
     })
 
-    service.on('READ', 'Products', async request => {
-        const { query } = request
-        console.log(query)
-        return await cds.run(query)
+    service.on('READ', 'Products', async ({ query }) => {
+        console.log(JSON.stringify(query))
     })
 
-    service.on('UPDATE', 'Products', async request => {
-        const { query } = request
-        console.log(query)
-        await cds.run(query)
+    service.on('UPDATE', 'Products', async ({ query }) => {
+        console.log(JSON.stringify(query))
     })
 
-    service.on('DELETE', 'Products', async request => {
-        const { query } = request
-        console.log(query)
-        await cds.run(query)
+    service.on('DELETE', 'Products', async ({ query }) => {
+        console.log(JSON.stringify(query))
     })
 }
